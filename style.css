@@ -1,0 +1,107 @@
+
+:root{
+  --dk-violet: hsl(268, 75%, 9%);
+  --lt-violet: hsl(268, 47%, 21%);
+  --lt-violet2: hsl(281, 89%, 26%);
+  --vb-violet: hsl(285, 91%, 52%);
+  --vb-violet2: hsl(290, 70%, 36%);
+
+  --vb-yellow: hsl(52, 100%, 62%);
+
+
+  --pl-white: hsl(0, 0%, 100%);
+
+  --vb-cyan: hsl(176, 100%, 44%);
+  --vb-cyan2: hsl(177, 92%, 70%);
+  --dk-text: hsl(198, 20%, 13%);
+}
+body{
+
+  width: 100vw;
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  background: linear-gradient(231deg,rgba(22,6,40,1) 0%,rgba(52,28,79,1) 50%,rgba(88,7,125,1) 100%);
+}
+.controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+   justify-content: center;
+   gap: 30px ;
+ 
+  font-family: Arial, sans-serif;
+  margin-top: 0px; 
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+ margin-bottom: 10px;
+ color: white;
+ background-color: black;
+
+}
+.btn{
+  padding: 11px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  
+}
+.array-container {
+   display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 60vh; 
+  /* position: absolute; */
+  
+
+}
+.slider{
+  appearance: none;
+  width: 200px;
+  height: 0.60rem;
+  cursor: pointer;
+  background-color: var(--lt-violet);
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-image: linear-gradient(var(--vb-violet),var(--vb-violet));
+  background-repeat: no-repeat;
+
+}
+.slider::-webkit-slider-thumb{
+  position: relative;
+  z-index: 1;
+  appearance: none;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
+  background-color: var(--vb-yellow);
+  margin-top:-rem; 
+  
+  box-shadow: 0px 0px 20px 0px rgba(255, 220, 61, 0.50);
+  transition: all 100ms ease-in;
+
+}
+.slider:focus{
+  outline: 2px solid var(--vb-yellow);
+}
+.slider::-webkit-slider-thumb:hover{
+  outline: 2px solid var(--vb-yellow);
+  background-color: var(--vb-violet);
+  box-shadow: 0px 0px 25px 5px rgba(40, 36, 11, 0.3);
+}
+
+.bar {
+  width: 15px;
+  margin: 0 1px;
+  background-color: #3498db;
+  transition: height 0.2s, background-color 0.2s;
+  /* width: 2px;
+  background-color: pink;
+  display: inline-block;
+  margin: 0 1px; */
+}
